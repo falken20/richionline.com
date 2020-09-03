@@ -1,4 +1,4 @@
-
+import os
 from flask import Flask, render_template, url_for
 import urllib, json
 from selenium import webdriver
@@ -8,6 +8,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from flask import Flask,redirect
 
+from dotenv import load_dotenv
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Looking for .env file for environment vars
+load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 
 app = Flask(__name__)
 
