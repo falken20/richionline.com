@@ -15,11 +15,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 load_dotenv(os.path.join(BASE_DIR, '.env'), override=True)
 
 app = Flask(__name__)
+# Set this var to True to be able to make any web change and take the changes with refresh
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 
 @app.route("/")
 def home():
-    # url_for('static', filename='main.css')
+    url_for('static', filename='main.css')
     return render_template("main.html")
 
 
