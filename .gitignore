@@ -1,5 +1,6 @@
 lib/
 temp/
+node_modules/
 
 ### Python - Django ###
 *.log
