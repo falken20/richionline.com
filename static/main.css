@@ -136,3 +136,11 @@ a:visited {
     left: 5px;
     text-decoration: none;
 }
+
+.menu-superior {
+    padding-right: 1%;
+}
+
+.bottom-bar {
+    padding-left: 1%;
+}
