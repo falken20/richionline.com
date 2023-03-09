@@ -15,8 +15,14 @@ Flask web for personal portfolio
 
 ---
 
-##### Setup
+##### Endpoint
 https://richionline-portfolio.nw.r.appspot.com
+
+##### Deploy in Google Cloud Platform
+
+```bash
+gcloud app deploy
+```
 
 ##### Setup
 
@@ -27,7 +33,11 @@ pip install -r requirements.txt
 ##### Running the app
 
 ```bash
-flask run
+flask run (with .flaskenv)
+```
+or
+```
+flask run -app PATH_APP
 ```
 
 ##### Setup tests
