@@ -37,7 +37,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.75;
-    padding-top: 4% !important
 }
 
 .portfolioPage {
@@ -50,7 +49,6 @@
     background-size: cover;
     background-position: right;
     opacity: 0.75;
-    padding-top: 4% !important
 }
 
 ul {
@@ -116,6 +114,7 @@ a:visited {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     text-align: left;
+    padding-top: 4% !important;
 }
 
 .link_contact {
@@ -146,4 +145,8 @@ a:visited {
 
 .bottom-bar {
     padding-left: 1%;
+}
+
+body {
+    margin: 0;
 }
