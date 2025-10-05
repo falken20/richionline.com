@@ -1,0 +1,46 @@
+# Coverage.py configuration file
+
+[run]
+# Source code to measure
+source = .
+
+# Omit these files from coverage
+omit =
+    */tests/*
+    */test_*.py
+    */__pycache__/*
+    */venv/*
+    */env/*
+    */.venv/*
+    setup.py
+    */site-packages/*
+
+[report]
+# Exclude lines from coverage calculation
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+    
+    # Don't complain about missing debug-only code:
+    def __repr__
+    
+    # Don't complain if tests don't hit defensive assertion code:
+    raise AssertionError
+    raise NotImplementedError
+    
+    # Don't complain if non-runnable code isn't run:
+    if __name__ == .__main__.:
+    if __name__ == "__main__":
+    
+    # Don't complain about abstract methods
+    @abstractmethod
+
+# Precision for coverage percentage
+precision = 2
+
+# Show missing lines in the report
+show_missing = True
+
+[html]
+# Directory for HTML coverage report
+directory = htmlcov
